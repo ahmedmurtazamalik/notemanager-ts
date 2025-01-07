@@ -1,0 +1,20 @@
+create free mysql database
+create an API for db operations
+make the frontend
+assign functions to all the buttons and use API calls to manage functionalities
+
+6th jan:
+watch all 12 typescript videos + decide functionalities + make a schema + make a local DB
+
+7th jan:
+make a proper schema for the frontend with each html element decided + make the frontend itself
+
+8th jan:
+apply css to the frontend
+make a REST api with interfaces for required functionalities + host the api somewhere
+
+9th jan:
+use the api and add the functionalities to the backend with typescript
+
+10th jan:
+deploy the web app using ngrok

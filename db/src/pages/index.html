@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Manager</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="headercontainer">
+            <div class="start-section">
+                <img src="../media/keep.png" alt="App Icon">
+                <h2>NOTES MANAGER</h2>
+            </div>
+            <div class="end-section">
+                <h3>Welcome User!</h3>
+                <h4>Date: January 7, 2025</h4>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard">
+            <button onclick="toggleContent('allNotes')">View All Notes</button>
+            <button onclick="toggleContent('noteGroups')">Manage Note Groups</button>
+            <button onclick="toggleContent('createNote')">Create Note</button>
+            <button onclick="toggleContent('trash')">Trash</button>
+        </div>
+        <div class="mainPane">
+            <div id="allNotes" class="content">
+                <h3>All Notes</h3>
+                <p>No notes available. Click "Create Note" to add one.</p>
+            </div>
+            <div id="noteGroups" class="content">
+                <h3>Note Groups</h3>
+                <p>No groups available. Manage your groups using the dashboard.</p>
+            </div>
+            <div id="createNote" class="content">
+                <h3>Create a Note</h3>
+                <p>Use the "Create Note" button in the dashboard to get started.</p>
+            </div>
+            <div id="trash" class="content">
+                <h3>Trash</h3>
+                <p>Your trash is empty. Deleted notes will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const contents = document.querySelectorAll('.mainPane .content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
